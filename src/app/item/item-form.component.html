@@ -1,0 +1,13 @@
+<div>
+    <form #form="ngForm">
+
+        itemName: <input type="text" name="inm" id="inm"  [(ngModel)]="itemName" required>
+        Quantity: <input type="text" name="quantity" id="quantity" [(ngModel)]="quantity"  required>
+        Price: <input type="text" name="price" id="price" [(ngModel)]="price"  required>
+        Description: <input type="text" name="desc" id="desc"  [(ngModel)]="description" required>
+
+        <button type="submit" name="btn" [disabled]="!form.valid" (click)="addItem()">Submit</button>
+    </form>
+</div>
+
+

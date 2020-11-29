@@ -1,0 +1,21 @@
+<div >
+    <table border="1">
+        <tr>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr *ngFor="let i of arr">
+            <td>{{i.itemName}}</td>
+            <td>{{i.quantity}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.description}}</td>
+        </tr>
+    </table>
+    <button type="submit" (click)="displayForm()">Submit</button>
+{{flag}}
+    <div >
+        <app-item-form *ngIf="flag"></app-item-form>
+    </div>
+</div>
