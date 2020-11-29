@@ -17,6 +17,7 @@ export class ItemService {
       new Item(13,2,4526,'washing machine'),
       new Item(14,7,4522,'bell'),
       new Item(15,8,4152,'pen'),
+       new Item(10,100,100,'Mirror')
   ]
   
 }
